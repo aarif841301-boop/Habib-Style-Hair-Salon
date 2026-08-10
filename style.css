@@ -1,0 +1,49 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--gold:#ff9d35;--orange:#ff5c14;--cream:#ffd39a;--dark:#080403;--panel:#160b07}
+html{scroll-behavior:smooth}
+body{background:#050302;color:var(--cream);font-family:Poppins,system-ui,sans-serif;overflow-x:hidden}
+button,input{font:inherit}
+.hero{height:100vh;min-height:650px;position:relative;background:url("salon.jpg") center center/cover no-repeat;display:grid;place-items:center;overflow:hidden}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.42),rgba(0,0,0,.12) 45%,rgba(0,0,0,.88))}
+.hero-content{position:relative;z-index:4;text-align:center;margin-top:-2vh;padding:20px}
+.mini-neon{display:inline-block;color:#ff3d2e;font-weight:700;font-size:clamp(20px,4vw,34px);text-shadow:0 0 5px #ff3d2e,0 0 18px #ff1900,0 0 35px #ff1900;margin-bottom:8px}
+h1{font-family:Amita,serif;font-size:clamp(58px,12vw,130px);line-height:1;color:#ffad43;text-shadow:0 0 4px #ffd38a,0 0 16px #ff7b00,0 0 35px #ff4200,0 0 75px #ff2500;animation:neon 2.3s infinite alternate}
+.scissors{font-size:38px;color:#ffb253;text-shadow:0 0 16px #ff5b00;margin:8px}
+.hero-content p{font-family:Kalam,cursive;font-size:clamp(18px,3vw,28px);color:#ffd9a5;text-shadow:0 0 12px #ff6400;margin-bottom:28px}
+.enter-btn{cursor:pointer;padding:13px 30px;color:#ffd09a;background:rgba(24,8,2,.76);border:1px solid #ff9a39;box-shadow:0 0 14px rgba(255,92,0,.65),inset 0 0 14px rgba(255,92,0,.15);border-radius:4px;transition:.25s}
+.enter-btn:hover{transform:translateY(-2px) scale(1.04);box-shadow:0 0 25px rgba(255,92,0,.9),0 0 60px rgba(255,50,0,.35)}
+.top-ui{position:fixed;z-index:30;inset:0;pointer-events:none}
+.clock-box{position:absolute;top:18px;left:18px;width:112px;text-align:center;padding:10px 8px;border:1px solid rgba(255,137,48,.65);background:rgba(5,3,2,.68);box-shadow:0 0 18px rgba(255,77,0,.3),inset 0 0 14px rgba(255,100,0,.08);backdrop-filter:blur(3px)}
+.clock-date{font-family:Kalam,cursive;font-size:18px;color:#ffb85f}
+.clock-time{font-family:monospace;font-weight:700;font-size:25px;color:#fff0c9;text-shadow:0 0 10px #ff6500}
+.clock-year{font-family:Kalam,cursive;font-size:17px;color:#ff8d3d}
+.hanging-lamp{position:absolute;right:28px;top:0;width:105px;height:190px;transform-origin:50% 0;animation:pendulum 4.5s ease-in-out infinite alternate}
+.lamp-cord{position:absolute;left:51px;top:0;width:2px;height:60px;background:#18120f}
+.lamp-chain{position:absolute;left:49px;top:57px;width:5px;height:48px;border-left:2px dotted #a36a37}
+.lamp-shade{position:absolute;top:100px;left:16px;width:76px;height:42px;background:linear-gradient(#9c5b26,#40200d);border-radius:50% 50% 12px 12px;border:2px solid #d68735;box-shadow:0 8px 22px rgba(255,116,25,.5)}
+.lamp-shade span{position:absolute;left:32px;top:35px;width:12px;height:10px;background:#ffb449;border-radius:50%;box-shadow:0 0 20px 9px #ff7b17}
+.lamp-glow{position:absolute;top:124px;left:8px;width:90px;height:70px;background:radial-gradient(ellipse,rgba(255,137,40,.25),transparent 70%);filter:blur(8px)}
+.music-room{min-height:100vh;padding:90px 6% 100px;background:radial-gradient(circle at 50% 10%,#3a1b0c,#100704 48%,#050302 100%);position:relative}
+.section-heading{display:flex;justify-content:center;align-items:center;gap:18px;text-align:center}
+.section-heading span{color:#ff7929;text-shadow:0 0 12px #ff4b00}
+.section-heading h2,.library-title h2{font-family:Amita,serif;color:#ffb45f;text-shadow:0 0 18px rgba(255,75,0,.7);font-size:clamp(30px,5vw,55px)}
+.tagline{text-align:center;color:#c89a72;margin:12px auto 42px}
+.player{max-width:920px;margin:auto;padding:28px;background:linear-gradient(145deg,#2a150b,#0d0704);border:1px solid #6d361b;border-radius:12px;box-shadow:0 20px 60px #000,inset 0 0 30px rgba(255,90,0,.06)}
+.now-playing{display:flex;align-items:center;gap:30px}
+.record-wrap{width:145px;flex:0 0 145px}
+.record{width:145px;height:145px;border-radius:50%;background:repeating-radial-gradient(circle,#090909 0 3px,#2b2b2b 4px 5px,#0a0a0a 6px 8px);border:5px solid #3b281c;display:grid;place-items:center;box-shadow:0 0 25px rgba(255,80,0,.22)}
+.record-center{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:#9c421d;color:#ffd092;font-size:12px;font-weight:700}
+.record.playing{animation:spin 4s linear infinite}
+.track-info{flex:1;min-width:0}.eyebrow{font-size:12px;color:#d06e30;text-transform:uppercase;letter-spacing:2px}.track-info h3{font-family:Amita,serif;color:#ffe0ad;font-size:clamp(25px,4vw,40px);margin:3px 0}.track-info p{color:#b48b68}
+.progress-area{display:flex;align-items:center;gap:10px;margin-top:22px;color:#a98160;font-family:monospace;font-size:12px}
+input[type=range]{accent-color:#ff7925;cursor:pointer}.progress-area input{flex:1}
+.controls{display:flex;justify-content:center;align-items:center;gap:25px;margin:24px 0 14px}
+.control-btn,.play-btn{border:1px solid #8c461e;background:#1a0c07;color:#ffc07a;border-radius:50%;width:50px;height:50px;cursor:pointer;box-shadow:0 0 12px rgba(255,80,0,.15);transition:.2s}.control-btn:hover,.play-btn:hover{transform:scale(1.08);box-shadow:0 0 20px rgba(255,90,0,.5)}.play-btn{width:66px;height:66px;background:#7c3213;color:#fff0cf;border-color:#d16b28;font-size:24px}
+.volume-row{display:flex;align-items:center;gap:10px;max-width:280px;margin:auto}.volume-row input{width:100%}
+.library-tools{max-width:920px;margin:55px auto 18px;display:flex;gap:18px;align-items:end;justify-content:space-between;flex-wrap:wrap}.library-title span{color:#a47755;font-size:13px}
+#search{width:min(100%,340px);background:#120906;border:1px solid #6d361b;color:#ffe0ad;padding:12px 15px;border-radius:5px;outline:none}#search:focus{border-color:#ff7b29;box-shadow:0 0 12px rgba(255,90,0,.2)}
+.song-list{max-width:920px;margin:auto;display:grid;gap:8px}.song-item{display:grid;grid-template-columns:42px 1fr auto;gap:12px;align-items:center;padding:12px 14px;background:rgba(24,11,6,.72);border:1px solid rgba(112,56,28,.55);cursor:pointer;transition:.2s}.song-item:hover,.song-item.active{background:#2a1409;border-color:#b75b23}.song-number{color:#b07147;text-align:center}.song-name{color:#f1c28a;font-weight:500}.song-artist{font-size:12px;color:#9d7456}.song-duration{font-family:monospace;color:#a97c5a;font-size:12px}.empty{text-align:center;color:#a77a59;margin:30px}
+footer{text-align:center;padding:40px 20px;background:#030201;color:#9c6d4e}footer p{color:#d78743;margin-bottom:8px}
+.rain{position:fixed;inset:0;z-index:20;pointer-events:none;opacity:.18;background-image:repeating-linear-gradient(105deg,transparent 0 9px,rgba(190,220,255,.45) 10px,transparent 11px 22px);background-size:70px 120px;animation:rain .55s linear infinite}.film-grain{position:fixed;inset:0;z-index:40;pointer-events:none;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E")}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes rain{to{background-position:-70px 120px}}@keyframes pendulum{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}@keyframes neon{from{opacity:.84}to{opacity:1}}
+@media(max-width:650px){.clock-box{top:10px;left:10px;width:92px;padding:7px 5px}.clock-time{font-size:20px}.clock-date,.clock-year{font-size:14px}.hanging-lamp{right:4px;transform:scale(.75);transform-origin:top right}.now-playing{flex-direction:column;text-align:center}.record-wrap,.record{width:125px;height:125px}.progress-area{width:100%}.music-room{padding:70px 16px}.player{padding:20px 14px}.song-item{grid-template-columns:30px 1fr auto}.song-duration{display:none}}

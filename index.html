@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090504">
+  <title>हबीब सैलून — 90s की यादें</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Kalam:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="film-grain"></div>
+  <div class="rain" aria-hidden="true"></div>
+
+  <header class="top-ui">
+    <div class="clock-box" aria-label="लाइव तारीख और समय">
+      <div class="clock-date" id="liveDate">१० अगस्त</div>
+      <div class="clock-time" id="liveTime">१०:४०</div>
+      <div class="clock-year" id="liveYear">२०२६</div>
+    </div>
+
+    <div class="hanging-lamp" aria-hidden="true">
+      <div class="lamp-cord"></div>
+      <div class="lamp-chain"></div>
+      <div class="lamp-shade"><span></span></div>
+      <div class="lamp-glow"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <div class="mini-neon">90s वाइब्स</div>
+        <h1>हबीब सैलून</h1>
+        <div class="scissors">✂</div>
+        <p>स्टाइल आपकी, अंदाज़ हमारा</p>
+        <button class="enter-btn" id="enterBtn">अंदर आइए</button>
+      </div>
+    </section>
+
+    <section class="music-room" id="music">
+      <div class="section-heading">
+        <span>✦</span>
+        <h2>पुराने गानों की महफ़िल</h2>
+        <span>✦</span>
+      </div>
+      <p class="tagline">बैठिए जनाब... आज यादों के साथ गाने सुनते हैं।</p>
+
+      <div class="player">
+        <div class="now-playing">
+          <div class="record-wrap" id="recordWrap">
+            <div class="record"><div class="record-center">90s</div></div>
+          </div>
+          <div class="track-info">
+            <span class="eyebrow">अभी बज रहा है</span>
+            <h3 id="songTitle">गाना चुनिए</h3>
+            <p id="songArtist">हबीब सैलून रेडियो</p>
+            <div class="progress-area">
+              <span id="currentTime">00:00</span>
+              <input id="progress" type="range" min="0" max="100" value="0" aria-label="गाने की प्रगति">
+              <span id="duration">00:00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button class="control-btn" id="prevBtn" title="Previous">⏮</button>
+          <button class="play-btn" id="playBtn" title="Play">▶</button>
+          <button class="control-btn" id="nextBtn" title="Next">⏭</button>
+        </div>
+
+        <div class="volume-row">
+          <span>🔊</span>
+          <input id="volume" type="range" min="0" max="1" step="0.01" value="0.85" aria-label="Volume">
+        </div>
+
+        <audio id="audio" preload="metadata"></audio>
+      </div>
+
+      <div class="library-tools">
+        <div class="library-title">
+          <h2>गानों की लाइब्रेरी</h2>
+          <span id="songCount">0 गाने</span>
+        </div>
+        <input id="search" type="search" placeholder="गाना या कलाकार खोजें..." autocomplete="off">
+      </div>
+
+      <div class="song-list" id="songList"></div>
+      <p class="empty" id="emptyState" hidden>कोई गाना नहीं मिला।</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>♥ कुछ पुराने ख्याल अच्छे हैं जनाब ♥</p>
+    <small>हबीब सैलून • 90s की यादें</small>
+  </footer>
+
+  <script src="songs.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
