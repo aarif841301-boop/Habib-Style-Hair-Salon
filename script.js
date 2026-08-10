@@ -20,11 +20,11 @@ let filteredIndexes = [];
 let isSeeking = false;
 
 const months = ["जनवरी","फ़रवरी","मार्च","अप्रैल","मई","जून","जुलाई","अगस्त","सितंबर","अक्टूबर","नवंबर","दिसंबर"];
-
+const days = ["रविवार","सोमवार","मंगलवार","बुधवार","गुरुवार","शुक्रवार","शनिवार"];
 function updateClock(){
   const now = new Date();
   // Hindi text + normal 0-9 numbers for easy reading.
-  document.getElementById("liveDate").textContent = `${now.getDate()} ${months[now.getMonth()]}`;
+  document.getElementById("liveDate").textContent = `${days[now.getDay()]}, ${now.getDate()} ${months[now.getMonth()]}`;
   let hours = now.getHours();
 const ampm = hours >= 12 ? "PM" : "AM";
 hours = hours % 12 || 12;
