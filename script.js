@@ -25,7 +25,12 @@ function updateClock(){
   const now = new Date();
   // Hindi text + normal 0-9 numbers for easy reading.
   document.getElementById("liveDate").textContent = `${now.getDate()} ${months[now.getMonth()]}`;
-  document.getElementById("liveTime").textContent = `${String(now.getHours()).padStart(2,"0")}:${String(now.getMinutes()).padStart(2,"0")}:${String(now.getSeconds()).padStart(2,"0")}`;
+  let hours = now.getHours();
+const ampm = hours >= 12 ? "PM" : "AM";
+hours = hours % 12 || 12;
+
+document.getElementById("liveTime").textContent =
+  `${String(hours).padStart(2,"0")}:${String(now.getMinutes()).padStart(2,"0")}:${String(now.getSeconds()).padStart(2,"0")} ${ampm}`;
   document.getElementById("liveYear").textContent = now.getFullYear();
 }
 updateClock();
