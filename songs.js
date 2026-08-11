@@ -20,13 +20,13 @@
   {
     title: "Ek Dil Hai",
     artist: "90s Yaadein",
-    file: "Ek Dil Hai(KoshalWorld.Com).mp3",
+    file: "Ek Dil Hai - song-001.mp3",
     duration: "--:--"
   },
   {
     title: "Dilbar Dilbar",
     artist: "90s Yaadein",
-    file: "(webmusic.in)_Dilbar-Dilbar.mp3",
+    file: "Dilbar Dilbar - song-002.mp3",
     duration: "--:--"
   },
   {
