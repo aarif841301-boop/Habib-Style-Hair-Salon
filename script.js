@@ -84,7 +84,7 @@ function loadSong(index, autoplay=false){
   currentIndex = (index + songs.length) % songs.length;
   const song = songs[currentIndex];
 
-  audio.src = song.file;
+  audio.src = encodeURI("./" + song.file);
   audio.load();
   songTitle.textContent = song.title;
   songArtist.textContent = song.artist || "Unknown Artist";
