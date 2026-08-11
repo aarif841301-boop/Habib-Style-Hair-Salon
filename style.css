@@ -50,7 +50,7 @@ h1{font-family:Amita,serif;font-size:clamp(58px,12vw,130px);line-height:1;color:
 .section-heading span{color:#ff7929;text-shadow:0 0 12px #ff4b00}
 .section-heading h2,.library-title h2{font-family:Amita,serif;color:#ffb45f;text-shadow:0 0 18px rgba(255,75,0,.7);font-size:clamp(30px,5vw,55px)}
 .tagline{text-align:center;color:#c89a72;margin:12px auto 42px}
-.player{max-width:920px;margin:auto;padding:28px;background:linear-gradient(145deg,rgba(42,21,11,.88),rgba(13,7,4,.92));border:1px solid #6d361b;border-radius:12px;box-shadow:0 20px 60px #000,inset 0 0 30px rgba(255,90,0,.06)}
+.player{max-width:920px;margin:auto;padding:28px;background:transparent;border:1px solid transparent;border-radius:12px;box-shadow:none}
 .now-playing{display:flex;align-items:center;gap:30px}
 .record-wrap{width:145px;flex:0 0 145px}
 .record{width:145px;height:145px;border-radius:50%;background:repeating-radial-gradient(circle,#090909 0 3px,#2b2b2b 4px 5px,#0a0a0a 6px 8px);border:5px solid #3b281c;display:grid;place-items:center;box-shadow:0 0 25px rgba(255,80,0,.22)}
