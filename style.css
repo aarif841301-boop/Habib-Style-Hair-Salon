@@ -21,8 +21,8 @@ h1{font-family:Amita,serif;font-size:clamp(58px,12vw,130px);line-height:1;color:
     position:absolute;
     right:28px;
     top:0;
-    width:120px;
-    height:180px;
+    width:95px;
+    height:145px;
     background:url("./lamp.png?v=5") center center / contain no-repeat !important;
     transform-origin:50% 0;
     animation:pendulum 4.5s ease-in-out infinite;
