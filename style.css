@@ -75,8 +75,10 @@ footer{text-align:center;padding:40px 20px;background:#030201;color:#9c6d4e}foot
         top: 10px;
         left: 10px;
 
-        width: 205px;
-        min-height: 0px;
+        width: 205px !important;
+        min-height: 0 !important;
+        height: 125px !important;
+max-height: 125px !important;
 
         padding: 9px 8px;
 
