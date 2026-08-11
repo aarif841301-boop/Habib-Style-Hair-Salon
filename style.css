@@ -5,7 +5,7 @@ body{background:#050302;color:var(--cream);font-family:Poppins,system-ui,sans-se
 button,input{font:inherit}
 .hero{height:100vh;min-height:650px;position:relative;background:url("salon-new.png") center center/cover no-repeat;display:grid;place-items:center;overflow:hidden}
 .hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.42),rgba(0,0,0,.12) 45%,rgba(0,0,0,.88))}
-.hero-content{position:absolute;z-index:4;text-align:center;left:50%;bottom:12%;transform:translateX(-50%);padding:20px;width:100%}
+.hero-content{position:absolute;z-index:4;text-align:center;left:50%;bottom:8%;transform:translateX(-50%);padding:20px;width:100%}
 .mini-neon{display:inline-block;color:#ff3d2e;font-weight:700;font-size:clamp(20px,4vw,34px);text-shadow:0 0 5px #ff3d2e,0 0 18px #ff1900,0 0 35px #ff1900;margin-bottom:8px}
 h1{font-family:Amita,serif;font-size:clamp(58px,12vw,130px);line-height:1;color:#ffad43;text-shadow:0 0 4px #ffd38a,0 0 16px #ff7b00,0 0 35px #ff4200,0 0 75px #ff2500;animation:neon 2.3s infinite alternate}
 .scissors{font-size:38px;color:#ffb253;text-shadow:0 0 16px #ff5b00;margin:8px}
