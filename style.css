@@ -23,7 +23,7 @@ h1{font-family:Amita,serif;font-size:clamp(58px,12vw,130px);line-height:1;color:
     top:0;
     width:120px;
     height:180px;
-    background:url("./lamp.png?v=5") center center / contain no-repeat !important;
+    background:url("./lamp.jpg?v=6") center center / contain no-repeat !important;
     transform-origin:50% 0;
     animation:pendulum 4.5s ease-in-out infinite;
     z-index:5;
