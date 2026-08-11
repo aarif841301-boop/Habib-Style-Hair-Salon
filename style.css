@@ -96,4 +96,7 @@ footer{text-align:center;padding:40px 20px;background:#030201;color:#9c6d4e}foot
     bottom:10% !important;
     transform:translateX(-50%) !important;
     z-index:10 !important;
+}.clock-box{
+    transform:scale(0.78) !important;
+    transform-origin:top left !important;
 }
