@@ -1,4 +1,4 @@
-*{box-sizing:border-box;margin:0;padding:0}
+.*{box-sizing:border-box;margin:0;padding:0}
 :root{--gold:#ff9d35;--orange:#ff5c14;--cream:#ffd39a;--dark:#080403;--panel:#160b07}
 html{scroll-behavior:smooth}
 body{background:#050302;color:var(--cream);font-family:Poppins,system-ui,sans-serif;overflow-x:hidden}
@@ -18,15 +18,15 @@ h1{font-family:Amita,serif;font-size:clamp(58px,12vw,130px);line-height:1;color:
 .clock-time{font-family:monospace;font-weight:700;font-size:22px;color:#fff0c9;text-shadow:0 0 10px #ff6500;white-space:nowrap;letter-spacing:-1px}
 .clock-year{font-family:Kalam,cursive;font-size:17px;color:#ff8d3d}
 .hanging-lamp{
-position:absolute;
-right:28px;
-top:0;
-width:120px;
-height:180px;
-background:url("./lamp.png?v=3") center center / contain no-repeat;
-transform-origin:50% 0;
-animation:pendulum 4.5s ease-in-out infinite;
-z-index:5;
+    position:absolute;
+    right:28px;
+    top:0;
+    width:120px;
+    height:180px;
+    background:url("./lamp.png?v=5") center center / contain no-repeat !important;
+    transform-origin:50% 0;
+    animation:pendulum 4.5s ease-in-out infinite;
+    z-index:5;
 }
 
 .lamp-cord,
@@ -35,10 +35,7 @@ z-index:5;
 }
 
 .lamp-shade{
-    display:block !important;
-    background:url("./lamp.png?v=4") center center / contain no-repeat !important;
-    border:none;
-    box-shadow:none;
+    display:none !important;
 }
 
 .lamp-shade span{
