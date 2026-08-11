@@ -17,12 +17,40 @@ h1{font-family:Amita,serif;font-size:clamp(58px,12vw,130px);line-height:1;color:
 .clock-date{font-family:Kalam,cursive;font-size:18px;color:#ffb85f}
 .clock-time{font-family:monospace;font-weight:700;font-size:22px;color:#fff0c9;text-shadow:0 0 10px #ff6500;white-space:nowrap;letter-spacing:-1px}
 .clock-year{font-family:Kalam,cursive;font-size:17px;color:#ff8d3d}
-.hanging-lamp{position:absolute;right:28px;top:0;width:105px;height:190px;transform-origin:50% 0;animation:pendulum 4.5s ease-in-out infinite alternate}
-.lamp-cord{position:absolute;left:51px;top:0;width:2px;height:60px;background:#18120f}
-.lamp-chain{position:absolute;left:49px;top:57px;width:5px;height:48px;border-left:2px dotted #a36a37}
-.lamp-shade{position:absolute;top:100px;left:16px;width:76px;height:42px;background:linear-gradient(#9c5b26,#40200d);border-radius:50% 50% 12px 12px;border:2px solid #d68735;box-shadow:0 8px 22px rgba(255,116,25,.5)}
-.lamp-shade span{position:absolute;left:32px;top:35px;width:12px;height:10px;background:#ffb449;border-radius:50%;box-shadow:0 0 20px 9px #ff7b17}
-.lamp-glow{position:absolute;top:124px;left:8px;width:90px;height:70px;background:radial-gradient(ellipse,rgba(255,137,40,.25),transparent 70%);filter:blur(8px)}
+.hanging-lamp{
+  position:absolute;
+  right:28px;
+  top:0;
+  width:120px;
+  height:180px;
+  transform-origin:50% 0;
+  animation:pendulum 4.5s ease-in-out infinite;
+  z-index:5;
+}
+
+.lamp-cord,
+.lamp-chain{
+  display:none;
+}
+
+.lamp-shade{
+  position:absolute;
+  top:15px;
+  left:0;
+  width:120px;
+  height:120px;
+  background:url("lamp.jpg") center center / contain no-repeat;
+  border:none;
+  box-shadow:none;
+}
+
+.lamp-shade span{
+  display:none;
+}
+
+.lamp-glow{
+  display:none;
+}
 .music-room{min-height:100vh;padding:90px 6% 100px;background:radial-gradient(circle at 50% 10%,#3a1b0c,#100704 48%,#050302 100%);position:relative}
 .section-heading{display:flex;justify-content:center;align-items:center;gap:18px;text-align:center}
 .section-heading span{color:#ff7929;text-shadow:0 0 12px #ff4b00}
