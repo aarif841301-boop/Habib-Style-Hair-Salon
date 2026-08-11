@@ -35,7 +35,10 @@ z-index:5;
 }
 
 .lamp-shade{
-    display:none !important;
+    display:block !important;
+    background:url("./lamp.png?v=4") center center / contain no-repeat !important;
+    border:none;
+    box-shadow:none;
 }
 
 .lamp-shade span{
