@@ -23,7 +23,7 @@ right:28px;
 top:0;
 width:120px;
 height:180px;
-background:url("./lamp.jpg?v=2") center center / contain no-repeat !important;
+background:url("./lamp.png?v=3") center center / contain no-repeat;
 transform-origin:50% 0;
 animation:pendulum 4.5s ease-in-out infinite;
 z-index:5;
