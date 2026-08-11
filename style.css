@@ -50,3 +50,8 @@ footer{text-align:center;padding:40px 20px;background:#030201;color:#9c6d4e}foot
 .hide-title {
     visibility: hidden;
 }
+.library-tools,
+.song-list,
+.empty {
+    display: none !important;
+}
