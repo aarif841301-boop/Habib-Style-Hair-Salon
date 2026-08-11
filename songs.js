@@ -29,16 +29,5 @@
     file: "Dilbar Dilbar - song-002.mp3",
     duration: "--:--"
   },
-  {
-    title: "Kitna Pyaara Hai",
-    artist: "90s Yaadein",
-    file: "Kitna_Pyaara_Hai_(Raaz_2002)(www.SongPK.mobi).mp3",
-    duration: "--:--"
-  },
-  {
-    title: "Bheed Mein Tanhai Mein",
-    artist: "90s Yaadein",
-    file: "Bheed_Mein_Tanhai_Mein-Udit_Narayan_www.Mp3MaD.Com_.mp3",
-    duration: "--:--"
-  }
+
 ];
