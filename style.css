@@ -18,14 +18,15 @@ h1{font-family:Amita,serif;font-size:clamp(58px,12vw,130px);line-height:1;color:
 .clock-time{font-family:monospace;font-weight:700;font-size:22px;color:#fff0c9;text-shadow:0 0 10px #ff6500;white-space:nowrap;letter-spacing:-1px}
 .clock-year{font-family:Kalam,cursive;font-size:17px;color:#ff8d3d}
 .hanging-lamp{
-  position:absolute;
-  right:28px;
-  top:0;
-  width:120px;
-  height:180px;
-  transform-origin:50% 0;
-  animation:pendulum 4.5s ease-in-out infinite;
-  z-index:5;
+position:absolute;
+right:28px;
+top:0;
+width:120px;
+height:180px;
+background:url("./lamp.jpg?v=2") center center / contain no-repeat !important;
+transform-origin:50% 0;
+animation:pendulum 4.5s ease-in-out infinite;
+z-index:5;
 }
 
 .lamp-cord,
@@ -34,17 +35,7 @@ h1{font-family:Amita,serif;font-size:clamp(58px,12vw,130px);line-height:1;color:
 }
 
 .lamp-shade{
-  position:absolute;
-  top:15px;
-  left:0;
-  width:120px;
-  height:120px;
-  background-image:url("./lamp.jpg") !important;
-background-position:center center !important;
-background-size:contain !important;
-background-repeat:no-repeat !important;
-  border:none;
-  box-shadow:none;
+    display:none !important;
 }
 
 .lamp-shade span{
