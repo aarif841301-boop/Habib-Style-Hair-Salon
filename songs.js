@@ -16,11 +16,29 @@
 
   1000+ songs are supported by this player.
 */
-const songs = [
+  const songs = [
   {
-    title: "अपना पहला गाना यहाँ डालें",
-    artist: "हबीब सैलून रेडियो",
-    file: "songs/song-001.mp3",
+    title: "Ek Dil Hai",
+    artist: "90s Yaadein",
+    file: "Ek Dil Hai(KoshalWorld.Com).mp3",
+    duration: "--:--"
+  },
+  {
+    title: "Dilbar Dilbar",
+    artist: "90s Yaadein",
+    file: "(webmusic.in)_Dilbar-Dilbar.mp3",
+    duration: "--:--"
+  },
+  {
+    title: "Kitna Pyaara Hai",
+    artist: "90s Yaadein",
+    file: "Kitna_Pyaara_Hai_(Raaz_2002)(www.SongPK.mobi).mp3",
+    duration: "--:--"
+  },
+  {
+    title: "Bheed Mein Tanhai Mein",
+    artist: "90s Yaadein",
+    file: "Bheed_Mein_Tanhai_Mein-Udit_Narayan_www.Mp3MaD.Com_.mp3",
     duration: "--:--"
   }
 ];
