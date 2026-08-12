@@ -171,7 +171,7 @@ function loadSong(index, autoplay = false) {
 
   currentIndex =
     (index + songs.length) % songs.length;
-
+localStorage.setItem("lastSongIndex", currentIndex);
   const song = songs[currentIndex];
 
   audio.src =
@@ -395,5 +395,8 @@ enterBtn.addEventListener("click", () => {
 renderList();
 
 if (songs.length) {
-  loadSong(0, false);
+    const savedSong = localStorage.getItem("lastSongIndex");
+    const startSong = savedSong !== null ? Number(savedSong) : 0;
+
+    loadSong(startSong, false);
 }
