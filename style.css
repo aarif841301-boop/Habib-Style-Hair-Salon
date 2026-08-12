@@ -52,13 +52,21 @@ h1{font-family:Amita,serif;font-size:clamp(58px,12vw,130px);line-height:1;color:
   position:relative;
   display:flex;
   flex-direction:column;
-  justify-content:flex-end;
+  justify-content:flex-start;
 }
 .section-heading{display:flex;justify-content:center;align-items:center;gap:18px;text-align:center}
 .section-heading span{color:#ff7929;text-shadow:0 0 12px #ff4b00}
 .section-heading h2,.library-title h2{font-family:Amita,serif;color:#ffb45f;text-shadow:0 0 18px rgba(255,75,0,.7);font-size:clamp(30px,5vw,55px)}
 .tagline{text-align:center;color:#c89a72;margin:12px auto 42px}
-.player{max-width:920px;margin:auto;padding:28px;background:transparent;border:1px solid transparent;border-radius:12px;box-shadow:none}
+.player{
+max-width:920px;
+margin:0 auto;
+padding:28px;
+position:absolute;
+bottom:40px;
+left:6%;
+right:6%;
+};background:transparent;border:1px solid transparent;border-radius:12px;box-shadow:none}
 .now-playing{display:flex;align-items:center;gap:30px}
 .record-wrap{width:145px;flex:0 0 145px}
 .record{width:145px;height:145px;border-radius:50%;background:repeating-radial-gradient(circle,#090909 0 3px,#2b2b2b 4px 5px,#0a0a0a 6px 8px);border:5px solid #3b281c;display:grid;place-items:center;box-shadow:0 0 25px rgba(255,80,0,.22)}
